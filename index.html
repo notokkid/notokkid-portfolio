@@ -12,22 +12,19 @@
     <title>notokkid.</title>
   </head>
   <body>
-    <div class="container">
       <header class="header">
         <div class="header__brand">notokkid</div>
-        <nav class="header__nav">
-          <div class="header__nav-item">
-            <a href="#about"> About </a>
-          </div>
-          <div class="header__nav-item">Portfolio</div>
-          <div class="header__nav-item">Contact</div>
+        <nav class="header__nav" id="navBtnGroup">
+          <div class="header__nav-item" id="btn-about">About</div>
+          <div class="header__nav-item" id="btn-portfolio">Portfolio</div>
+          <div class="header__nav-item" id="btn-contact">Contact</div>
           <div class="header__nav-link-wrapper">
-            <i class="fa fa-github header__nav-item"></i>
-            <i class="fa fa-linkedin header__nav-item"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-linkedin"></i>
           </div>
         </nav>
       </header>
-      <main>
+      <main class="main">
         <!-- hero section -->
         <section class="hero-section">
           <h1 class="hero-section__heading">
@@ -40,7 +37,7 @@
           </h2>
         </section>
         <!-- about section -->
-        <section class="about-section" id="about">
+        <section class="about-section" id="about-section">
           <!-- Who Section -->
           <article class="about-section__container">
             <div class="about-section__title">Who?</div>
@@ -80,9 +77,8 @@
           </article>
         </section>
         <!-- portfolio section -->
-        <section class="portfolio-section" id="portfolio"></section>
+        <section class="portfolio-section" id="portfolio-section"></section>
       </main>
-    </div>
 
     <div class="back-to-top" id="scrollTop">↑</div>
     <script src="app.js"></script>
