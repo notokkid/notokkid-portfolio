@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+/*
+ Variables
+*/
+
+$font_family_righteous: "Righteous", cursive;
+$font_family_montserrat: "Montserrat", sans-serif;
+$color_dark: #121212;
+$color_light: #dfe6e9;
+$color_primary: #16a085;
+$color_primary--light: #1abc9c;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+body {
+  background-color: $color_dark;
+}
+
+.container {
+  padding: 1.8rem 3rem;
+}
+
+.color-primary {
+  color: $color_primary;
+}
+
+.color-primary--light {
+  color: $color_primary--light;
+}
+
+// 1. Header
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color_dark;
+
+  position: fixed;
+  top: 0;
+  width: 95%;
+
+  padding: 2rem;
+
+  &__brand {
+    color: $color_light;
+    font-family: $font_family_righteous;
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+  }
+
+  &__nav {
+    color: $color_light;
+    font-family: $font_family_righteous;
+    font-size: 3rem;
+
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+
+    &-item {
+      cursor: pointer;
+      &:hover {
+        color: $color_primary;
+      }
+    }
+
+    &-link-wrapper {
+      padding-left: 2rem;
+      font-size: 2.4rem;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+// 2. Hero Section
+
+.hero-section {
+  margin-top: 15%;
+  padding: 4rem 8rem;
+  &__heading {
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
+    color: $color_light;
+    font-family: $font_family_righteous;
+    font-weight: normal;
+  }
+  &__cta {
+    font-family: $font_family_montserrat;
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+// 3. About Section
+
+.about-section {
+  margin-top: 20%;
+
+  display: flex;
+  gap: 1.8rem;
+
+  &__container {
+    color: $color_light;
+    font-size: 1.8rem;
+    font-family: $font_family_montserrat;
+    letter-spacing: 0.1rem;
+    background-color: #1e1e1e;
+    padding: 1.2rem 1.8rem;
+    box-shadow: 10px 10px $color_primary;
+  }
+
+  &__title {
+    font-family: $font_family_righteous;
+    font-size: 2.2rem;
+    padding-bottom: 1rem;
+    color: $color_primary;
+  }
+}
+
+// 4. Portfolio Section
+
+.portfolio-section {
+  margin-top: 20%;
+}
+
+// Back to top button
+
+.back-to-top {
+  height: 5rem;
+  width: 5rem;
+  background-color: $color_primary;
+  border-radius: 50%;
+  cursor: pointer;
+
+  font-size: 2rem;
+  font-family: $font_family_montserrat;
+  font-weight: 700;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 5rem;
+  right: 50%;
+  z-index: 99;
+
+  &:hover {
+    background-color: $color_primary--light;
+  }
+}
+
+.hide {
+  display: none;
+}
