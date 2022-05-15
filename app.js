@@ -6,7 +6,7 @@ const portfolioSection = document.querySelector("#portfolio-section");
 
 // Scroll To Top Functionality
 window.onscroll = () => {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     scrollTopBtn.style.display = "flex";
   } else {
     scrollTopBtn.style.display = "none";
